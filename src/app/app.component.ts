@@ -104,9 +104,3 @@ export class AppComponent {
 
   }
 }
-
-(name: string) => {
-  return 'hola' + name;
-};
-
-() => 'hola';
