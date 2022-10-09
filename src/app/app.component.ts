@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { __values } from 'tslib';
 
 @Component({
   selector: 'app-root',
@@ -81,6 +82,25 @@ export class AppComponent {
     //tomar un dato de la base de datos
     const{name}= per3;
     console.log('name:', name);
+    
+    //EJERCICIO 1.
+    //{1:'a',2:'a',3:'a',4:'a',5:'a',6:'a'} convertir a un array y sumar los números pares
+    const a= {1:'a',2:'a',3:'a',4:'a',5:'a',6:'a'};
+    //keys saca los números del array
+    const b = Object.keys(a).map(n=>parseInt(n)) .reduce((acc,value)=>{ //convierte a número el array con map
+      if(value %2 === 0 ){
+        acc = acc + value;
+      }
+      return acc;
+
+    }, 0); //iniciando el acc en 0 
+    console.log('Vector de numeros',Object.keys(a))
+    console.log('suma de pares:',b)
+
+    //EJERCICIO 2.
+    //[1,2,3,4,5,6] filtrar los números impares y mostrarlos como cadena
+    console.log('impares',[1,2,3,4,5,6] .filter(s=> s %2 !==0).join('-'))
+       
 
   }
 }
