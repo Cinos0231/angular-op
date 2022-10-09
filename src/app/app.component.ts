@@ -11,6 +11,9 @@ export class AppComponent {
   constructor() {
     const testMap = [1, 2, 3, 4, 5, 6].map((item) => item * 2);
     console.log(testMap);
+
+    const testForeach = [1, 2, 3, 4, 5, 6].forEach((item) => item);
+    console.log(testForeach);
   }
 }
 
