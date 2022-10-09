@@ -14,6 +14,9 @@ export class AppComponent {
 
     const testForeach = [1, 2, 3, 4, 5, 6].forEach((item) => item);
     console.log(testForeach);
+
+    const testFind = [1, 2, 3, 4, 5, 6].find(item => item === 4);
+    console.log(testFind);
   }
 }
 
