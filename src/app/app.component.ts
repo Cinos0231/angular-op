@@ -18,7 +18,7 @@ export class AppComponent {
     const testFind = [1, 2, 3, 4, 5, 6].find(item => item === 4);
     console.log(testFind);
 
-    const testFilter = [1, 2, 3, 4, 5, 6].filter(item => item %2);
+    const testFilter = [1, 2, 3, 4, 5, 6].filter(item => item %2 ===0 );
     console.log(testFilter);
   }
 }
